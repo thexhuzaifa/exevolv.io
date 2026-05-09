@@ -60,7 +60,7 @@ export default function PrivacyPolicyPage({ params }: Props) {
               </div>
             </div>
             <p className="text-dark-600 dark:text-dark-400">
-              Last updated: February 1, 2026
+              Last updated: {product.slug === 'quizmaster-ai-android' ? 'May 09, 2026' : 'February 1, 2026'}
             </p>
           </div>
         </div>
@@ -69,11 +69,63 @@ export default function PrivacyPolicyPage({ params }: Props) {
       <section className="section-padding bg-white dark:bg-dark-950">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto prose dark:prose-invert prose-headings:font-bold prose-a:text-primary">
-            <h2>Introduction</h2>
-            <p>
-              This Privacy Policy describes how {product.name} ("we", "our", or "us") collects, uses, 
-              and shares information about you when you use our {product.category === 'android-app' ? 'mobile application' : 'browser extension'}.
-            </p>
+            {product.slug === 'quizmaster-ai-android' ? (
+              <>
+                <p>QuizMaster AI ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share information when you use our mobile application, QuizMaster AI - Instant Quiz Solver (the "App").</p>
+                
+                <h2>1. Information We Collect</h2>
+                <h3>A. Personal Information</h3>
+                <ul>
+                  <li><strong>Account Information:</strong> When you sign in using Google Authentication, we collect your name, email address, and profile picture URL to create and manage your account.</li>
+                  <li><strong>User Content:</strong> We store your quiz history, scanned questions, and AI-generated solutions in Firebase Firestore to allow you to access them across devices.</li>
+                </ul>
+                
+                <h3>B. Sensitive Permissions & Data</h3>
+                <ul>
+                  <li><strong>Camera & Images:</strong> The App requires access to your camera and gallery to capture images of quiz questions. These images are processed locally using Google ML Kit (OCR) and then the extracted text is sent to our AI services. We do not store your raw images on our servers.</li>
+                  <li><strong>Screen Capture (Media Projection):</strong> For the "Scan & Solve" floating feature, the App uses Screen Capture to read text from your screen. This data is processed in real-time to provide quiz solutions and is not stored permanently unless you choose to save the result.</li>
+                  <li><strong>Overlay Permission:</strong> The App uses the SYSTEM_ALERT_WINDOW permission to show a floating solver button for a seamless multi-tasking experience.</li>
+                </ul>
+                
+                <h2>2. Third-Party Services</h2>
+                <p>We use the following third-party services which may collect information used to identify you:</p>
+                <ul>
+                  <li><strong>Google Play Services:</strong> For App functionality and updates.</li>
+                  <li><strong>Google AdMob:</strong> To display advertisements. AdMob may collect data such as device identifiers and location to serve relevant ads.</li>
+                  <li><strong>Firebase (Google):</strong> For authentication (Google Sign-In), database management (Firestore), and cloud messaging (Push Notifications).</li>
+                  <li><strong>Groq AI:</strong> We use Groq's API to process quiz questions and provide solutions. Only the text of the quiz is sent to this service.</li>
+                </ul>
+
+                <h2>3. Data Retention and Deletion</h2>
+                <ul>
+                  <li>We retain your quiz history and account data as long as your account is active.</li>
+                  <li><strong>User Control:</strong> You can delete your history within the App.</li>
+                  <li><strong>Logout:</strong> When you log out, local caches and sensitive session data are purged from the device.</li>
+                  <li><strong>Account Deletion:</strong> Users can request account and data deletion by contacting us at privacy@exevolv.io.</li>
+                </ul>
+
+                <h2>4. Security</h2>
+                <p>We implement industry-standard security measures, including SSL encryption and Firebase Security Rules, to protect your data from unauthorized access.</p>
+
+                <h2>5. Children’s Privacy</h2>
+                <p>Our services are not intended for children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
+
+                <h2>6. Changes to This Policy</h2>
+                <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+
+                <h2>7. Contact Us</h2>
+                <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at:</p>
+                <ul>
+                  <li>Email: <a href="mailto:privacy@exevolv.io">privacy@exevolv.io</a></li>
+                </ul>
+              </>
+            ) : (
+              <>
+                <h2>Introduction</h2>
+                <p>
+                  This Privacy Policy describes how {product.name} ("we", "our", or "us") collects, uses, 
+                  and shares information about you when you use our {product.category === 'android-app' ? 'mobile application' : 'browser extension'}.
+                </p>
 
             <h2>Information We Collect</h2>
             <p>
@@ -212,6 +264,8 @@ export default function PrivacyPolicyPage({ params }: Props) {
               <li>Email: <a href="mailto:privacy@exevolv.io">privacy@exevolv.io</a></li>
               <li>Website: <a href="https://exevolv.io/contact">exevolv.io/contact</a></li>
             </ul>
+              </>
+            )}
           </div>
 
           <div className="max-w-3xl mx-auto mt-12">
