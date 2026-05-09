@@ -96,8 +96,7 @@ export default function DeleteAccountPage({ params }: Props) {
                   ></textarea>
                 </div>
                 <button 
-                  type="button" 
-                  onClick={() => alert('Account deletion request submitted.')}
+                  type="submit" 
                   className="w-full px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-medium rounded-xl transition-colors"
                 >
                   Submit Request
