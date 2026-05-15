@@ -1,6 +1,8 @@
 'use client';
 
 import { useState } from 'react';
+import Breadcrumbs from '@/components/ui/Breadcrumbs';
+import { Database, ShieldAlert, CheckCircle2 } from 'lucide-react';
 
 export default function IpFinder() {
   const [ip, setIp] = useState('');
@@ -37,43 +39,82 @@ export default function IpFinder() {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-20 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md border dark:border-gray-700">
-      <h1 className="text-2xl font-bold mb-4 dark:text-white">Proxy IP Saver</h1>
-      <p className="mb-6 text-sm text-gray-600 dark:text-gray-300">
-        Enter a proxy IP. If it has been saved before, you will receive an &quot;already existed&quot; error.
-      </p>
-      
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <div>
-          <label className="block text-sm font-medium text-gray-700 dark:text-gray-200">IP Address</label>
-          <input
-            type="text"
-            value={ip}
-            onChange={(e) => setIp(e.target.value)}
-            placeholder="e.g. 192.168.1.50"
-            className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
-            required
-          />
+    <>
+      <section className="relative gradient-bg py-16 md:py-24 overflow-hidden">
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -top-40 -right-40 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
         </div>
-        <button
-          type="submit"
-          disabled={loading}
-          className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50"
-        >
-          {loading ? 'Saving...' : 'Save IP'}
-        </button>
-      </form>
+        <div className="container-custom relative">
+          <Breadcrumbs items={[{ label: 'IP Finder' }]} />
+          
+          <div className="max-w-3xl">
+            <span className="badge-primary mb-4 inline-flex">IP Validation</span>
+            <h1 className="text-4xl md:text-5xl font-bold text-dark-900 dark:text-white mb-4 leading-[1.1]">
+              Proxy IP Saver
+            </h1>
+            <p className="text-lg text-dark-600 dark:text-dark-400">
+              Submit your proxy IP address to ensure accuracy and prevent duplications across users in real-time.
+            </p>
+          </div>
+        </div>
+      </section>
 
-      {message && (
-        <div className="mt-4 p-3 bg-green-100 dark:bg-green-900 border border-green-400 text-green-700 dark:text-green-300 rounded">
-          {message}
+      <section className="section-padding bg-white dark:bg-dark-950">
+        <div className="container-custom max-w-xl">
+          <div className="card p-8 md:p-10">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-12 h-12 bg-primary-50 dark:bg-primary-900/20 rounded-xl flex items-center justify-center text-primary flex-shrink-0">
+                <Database className="w-6 h-6" />
+              </div>
+              <h2 className="text-2xl font-bold text-dark-900 dark:text-white">
+                Enter IP Address
+              </h2>
+            </div>
+            
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div>
+                <label className="block text-sm font-medium text-dark-700 dark:text-dark-200 mb-2">
+                  IPv4 or IPv6 Address
+                </label>
+                <input
+                  type="text"
+                  value={ip}
+                  onChange={(e) => setIp(e.target.value)}
+                  placeholder="e.g. 192.168.1.50"
+                  className="input-field dark:bg-dark-900 dark:border-dark-700 dark:text-white"
+                  required
+                />
+              </div>
+              
+              <button
+                type="submit"
+                disabled={loading}
+                className="btn-primary w-full shadow-md"
+              >
+                {loading ? 'Processing...' : 'Save & Verify'}
+              </button>
+            </form>
+
+            {message && (
+              <div className="mt-6 flex items-start gap-3 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl">
+                <CheckCircle2 className="w-5 h-5 text-green-600 dark:text-green-500 flex-shrink-0 mt-0.5" />
+                <p className="text-green-800 dark:text-green-400 font-medium">
+                  {message}
+                </p>
+              </div>
+            )}
+            
+            {error && (
+              <div className="mt-6 flex items-start gap-3 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl">
+                <ShieldAlert className="w-5 h-5 text-red-600 dark:text-red-500 flex-shrink-0 mt-0.5" />
+                <p className="text-red-800 dark:text-red-400 font-medium">
+                  {error}
+                </p>
+              </div>
+            )}
+          </div>
         </div>
-      )}
-      {error && (
-        <div className="mt-4 p-3 bg-red-100 dark:bg-red-900 border border-red-400 text-red-700 dark:text-red-300 rounded">
-          {error}
-        </div>
-      )}
-    </div>
+      </section>
+    </>
   );
 }
