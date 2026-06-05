@@ -76,6 +76,52 @@ export const products: Product[] = [
     supportUrl: '/products/ip-filter-exchange/documentation'
   },
   {
+    id: 'uc-max',
+    name: 'UC Max',
+    slug: 'uc-max',
+    tagline: 'Earn Real UC by completing tasks, surveys and solving PUBG quizes.',
+    description: 'UC Max is a mobile app that allows users to earn UC by completing various tasks, participating in surveys, and solving quizzes related to PUBG. It\'s a fun and engaging way to get in-game currency.',
+    category: 'android-app',
+    icon: '/images/products/uc-max-icon.png',
+    screenshots: ['/images/products/uc-max-banner.png'],
+    features: [
+      {
+        title: 'Earn UC',
+        description: 'Complete tasks and surveys to earn real UC for PUBG.',
+        icon: 'DollarSign'
+      },
+      {
+        title: 'PUBG Quizzes',
+        description: 'Test your PUBG knowledge and earn rewards by solving quizzes.',
+        icon: 'HelpCircle'
+      },
+      {
+        title: 'Secure & Reliable',
+        description: 'Your account and earnings are kept secure.',
+        icon: 'Shield'
+      },
+      {
+        title: 'Easy Withdrawals',
+        description: 'Easily withdraw your earned UC to your PUBG account.',
+        icon: 'Gift'
+      },
+      {
+        title: 'User Privacy',
+        description: 'We respect your privacy and handle your data with care.',
+        icon: 'Lock'
+      }
+    ],
+    storeUrl: '#',
+    storeId: '',
+    rating: 4.5,
+    users: '1K+',
+    version: '1.0.0',
+    lastUpdated: 'June 6, 2026',
+    developer: 'exevolv.io',
+    privacyPolicyUrl: '/products/uc-max/privacy-policy',
+    supportUrl: '/contact'
+  },
+  {
     id: 'quizmaster-ai',
     name: 'QuizMaster AI',
     slug: 'quizmaster-ai',

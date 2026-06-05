@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import mysql from 'mysql2/promise';
 
 const dbConfig = {
-  host: process.env.DB_HOST || '194.59.164.30', 
+  host: process.env.DB_HOST || 'srv2186.hstgr.io', 
   user: process.env.DB_USER || 'u659748479_np',
   password: process.env.DB_PASSWORD || 'Business+123!!',
   database: process.env.DB_NAME || 'u659748479_np' 
