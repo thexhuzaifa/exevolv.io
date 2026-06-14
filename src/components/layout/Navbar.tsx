@@ -11,7 +11,7 @@ const navigation = [
     name: 'Products', 
     href: '/products',
     children: [
-      { name: 'IP Filter Exchange', href: '/products/ip-filter-exchange' },
+      { name: 'ProxyConnector Pro', href: '/products/ip-filter-exchange' },
       { name: 'QuizMaster AI', href: '/products/quizmaster-ai' },
       { name: 'TaleemSpot Notes', href: '/products/taleemspot-notes' },
       { name: 'Pulser Pro', href: '/products/pulser-pro' },

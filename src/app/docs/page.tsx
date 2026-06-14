@@ -19,7 +19,7 @@ const quickLinks = [
     icon: <Download className="w-6 h-6" />,
     description: 'New to our products? Start here to learn how to install and set up our browser extensions and apps.',
     links: [
-      { name: 'IP Filter Exchange Guide', href: '/products/ip-filter-exchange/documentation' },
+      { name: 'ProxyConnector Pro Guide', href: '/products/proxyconnector-pro/documentation' },
       { name: 'QuizMaster AI Guide', href: '/products/quizmaster-ai/documentation' },
       { name: 'TaleemSpot Notes Guide', href: '/products/taleemspot-notes/documentation' },
     ]

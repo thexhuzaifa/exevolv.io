@@ -25,11 +25,11 @@ export interface Product {
 
 export const products: Product[] = [
   {
-    id: 'ip-filter-exchange',
-    name: 'IP Filter Exchange',
-    slug: 'ip-filter-exchange',
+    id: 'proxyconnectorpro',
+    name: 'ProxyConnector Pro',
+    slug: 'proxyconnectorpro',
     tagline: 'Safe, Secure, Private Proxy Connector',
-    description: 'IP Filter Exchange is a powerful and secure proxy management extension designed to protect your online privacy. It allows you to easily connect, switch, and manage proxies while preventing IP leaks with built-in WebRTC protection. With automatic timezone matching and a smooth user experience, it ensures safe and reliable browsing every time.',
+    description: 'ProxyConnector Pro is a powerful and secure proxy management extension designed to protect your online privacy. It allows you to easily connect, switch, and manage proxies while preventing IP leaks with built-in WebRTC protection. With automatic timezone matching and a smooth user experience, it ensures safe and reliable browsing every time.',
     category: 'chrome-extension',
     icon: '/images/products/ip-filter-exchange-icon.png',
     screenshots: ['/images/products/ip-filter-exchange-banner.png'],
@@ -72,8 +72,8 @@ export const products: Product[] = [
     version: '2.3.2',
     lastUpdated: 'January 18, 2026',
     developer: 'exevolv.io',
-    privacyPolicyUrl: '/products/ip-filter-exchange/privacy-policy',
-    supportUrl: '/products/ip-filter-exchange/documentation'
+    privacyPolicyUrl: '/products/proxyconnectorpro/privacy-policy',
+    supportUrl: '/products/proxyconnectorpro/documentation'
   },
   {
     id: 'uc-max',

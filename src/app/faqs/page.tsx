@@ -31,11 +31,11 @@ const faqCategories = [
   },
   {
     id: 'ip-filter-exchange',
-    name: 'IP Filter Exchange',
+    name: 'ProxyConnector Pro',
     faqs: [
       {
-        question: 'What is IP Filter Exchange?',
-        answer: 'IP Filter Exchange is a Chrome extension for secure proxy management. It helps you connect to proxies, prevents WebRTC leaks, and automatically matches timezones based on your proxy location.'
+        question: 'What is ProxyConnector Pro?',
+        answer: 'ProxyConnector Pro is a Chrome extension for secure proxy management. It helps you connect to proxies, prevents WebRTC leaks, and automatically matches timezones based on your proxy location.'
       },
       {
         question: 'How do I add a proxy?',
@@ -43,7 +43,7 @@ const faqCategories = [
       },
       {
         question: 'What is WebRTC protection?',
-        answer: 'WebRTC is a technology that can expose your real IP address even when using a proxy or VPN. IP Filter Exchange blocks WebRTC leaks to ensure your privacy is protected.'
+        answer: 'WebRTC is a technology that can expose your real IP address even when using a proxy or VPN. ProxyConnector Pro blocks WebRTC leaks to ensure your privacy is protected.'
       },
       {
         question: 'Does the extension work with all websites?',

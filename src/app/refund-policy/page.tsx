@@ -39,7 +39,7 @@ export default function RefundPolicyPage() {
               Currently, all exevolv.io products are free to use. This includes:
             </p>
             <ul>
-              <li>IP Filter Exchange browser extension</li>
+              <li>ProxyConnector Pro browser extension</li>
               <li>QuizMaster AI browser extension</li>
               <li>TaleemSpot Notes mobile app</li>
             </ul>

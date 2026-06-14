@@ -47,7 +47,7 @@ const values = [
 
 const milestones = [
   { year: '2024', event: 'Founded exevolv.io', description: 'Huzaifa started exevolv.io from Faisalabad, Pakistan with a vision to create useful browser extensions.' },
-  { year: '2025', event: 'Launched IP Filter Exchange', description: 'Our first Chrome extension for secure proxy management.' },
+  { year: '2025', event: 'Launched ProxyConnector Pro', description: 'Our first Chrome extension for secure proxy management.' },
   { year: '2025', event: 'Released QuizMaster AI', description: 'AI-powered quiz solving extension for students.' },
   { year: '2025', event: 'TaleemSpot Notes App', description: 'Launched our first Android app for Pakistani students.' },
   { year: '2026', event: 'Launched Pulser Pro & ZeroAds', description: 'Sound booster and ad blocker extensions to enhance browsing.' },

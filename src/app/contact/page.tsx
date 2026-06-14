@@ -210,7 +210,7 @@ export default function ContactPage() {
                       className="input-field"
                     >
                       <option value="">Select a product (optional)</option>
-                      <option value="ip-filter-exchange">IP Filter Exchange</option>
+                      <option value="proxyconnector-pro">ProxyConnector Pro</option>
                       <option value="quizmaster-ai">QuizMaster AI</option>
                       <option value="taleemspot-notes">TaleemSpot Notes</option>
                       <option value="pulser-pro">Pulser Pro</option>

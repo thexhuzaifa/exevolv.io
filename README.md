@@ -88,7 +88,7 @@ exevolv.io/
 
 This website showcases three innovative products:
 
-1. **IP Filter Exchange** - Chrome extension for filtering IP addresses with advanced rules
+1. **ProxyConnector Pro** - Chrome extension for filtering IP addresses with advanced rules
 2. **QuizMaster AI** - AI-powered quiz generator for educators
 3. **TaleemSpot Notes** - Student notes and learning materials platform
 

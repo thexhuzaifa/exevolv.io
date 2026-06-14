@@ -47,7 +47,7 @@ export default function TermsOfServicePage() {
               current products include:
             </p>
             <ul>
-              <li>IP Filter Exchange - Proxy management extension</li>
+              <li>ProxyConnector Pro - Proxy management extension</li>
               <li>QuizMaster AI - AI-powered quiz solving extension</li>
               <li>TaleemSpot Notes - Educational study app</li>
             </ul>

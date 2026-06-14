@@ -51,7 +51,7 @@ const features = [
 
 const testimonials = [
   {
-    quote: "IP Filter Exchange is exactly what I needed for managing proxies. Clean interface and works flawlessly!",
+    quote: "ProxyConnector Pro is exactly what I needed for managing proxies. Clean interface and works flawlessly!",
     author: "Alex Chen",
     role: "Security Researcher",
     rating: 5,
