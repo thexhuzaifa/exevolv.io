@@ -30,7 +30,7 @@ const faqCategories = [
     ]
   },
   {
-    id: 'ip-filter-exchange',
+    id: 'proxyconnectorpro',
     name: 'ProxyConnector Pro',
     faqs: [
       {

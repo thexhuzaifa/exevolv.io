@@ -11,7 +11,7 @@ const navigation = [
     name: 'Products', 
     href: '/products',
     children: [
-      { name: 'ProxyConnector Pro', href: '/products/ip-filter-exchange' },
+      { name: 'ProxyConnector Pro', href: '/products/proxyconnectorpro' },
       { name: 'QuizMaster AI', href: '/products/quizmaster-ai' },
       { name: 'Pulser Pro', href: '/products/pulser-pro' },
       { name: 'ZeroAds', href: '/products/zeroadsblocker' },

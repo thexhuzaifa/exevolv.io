@@ -39,7 +39,7 @@ const quickLinks = [
     description: 'Having issues? Check our frequently asked questions and troubleshooting guides.',
     links: [
       { name: 'General FAQs', href: '/faqs' },
-      { name: 'IP Filter Exchange FAQs', href: '/products/ip-filter-exchange/faqs' },
+      { name: 'ProxyConnector Pro FAQs', href: '/products/proxyconnectorpro/faqs' },
       { name: 'QuizMaster AI FAQs', href: '/products/quizmaster-ai/faqs' },
     ]
   },
