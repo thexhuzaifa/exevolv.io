@@ -22,11 +22,11 @@ export default function ImageSlider({ images, altText }: ImageSliderProps) {
   if (!images || images.length === 0) return null
 
   return (
-    <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl shadow-primary/20 group">
+    <div className="relative w-full aspect-[4/3] sm:aspect-video md:aspect-[16/10] bg-gray-50 dark:bg-dark-900 rounded-3xl overflow-hidden shadow-2xl shadow-primary/20 group">
       <img 
         src={images[currentIndex]} 
         alt={`${altText} - Screenshot ${currentIndex + 1}`}
-        className="w-full h-full object-cover transition-transform duration-500"
+        className="w-full h-full object-contain p-2 sm:p-4 transition-transform duration-500"
       />
       
       {/* Slider Controls */}
