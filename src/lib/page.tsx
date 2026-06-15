@@ -127,7 +127,7 @@ export default function ServicesPage() {
                 <div className="absolute inset-0 bg-white dark:bg-dark-800 rounded-[2rem] shadow-2xl overflow-hidden border-4 border-white dark:border-dark-800">
                   {/* Ensure you have an image at public/Assets/MDHuzaifa.jpg or change extension to .png */}
                   <img 
-                    src="/Assets/MDHuzaifa.jpg" 
+                    src="/Assets/MdHuzaifa.png" 
                     alt="Md Huzaifa"
                     className="w-full h-full object-cover object-top"
                     onError={(e) => {
