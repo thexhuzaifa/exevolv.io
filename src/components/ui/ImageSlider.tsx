@@ -50,6 +50,7 @@ export default function ImageSlider({ images, altText }: ImageSliderProps) {
           src={images[currentIndex]}
           alt={`${altText} - Screenshot ${currentIndex + 1}`}
           fill
+          unoptimized={true}
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 70vw"
           priority={currentIndex === 0}
           className={`object-contain p-2 sm:p-4 transition-opacity duration-300 ease-in-out ${

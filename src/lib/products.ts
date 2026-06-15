@@ -285,7 +285,7 @@ export const products: Product[] = [
     ],
     storeUrl: 'https://chromewebstore.google.com/detail/zeroads-block-all-ads-ins/akghmpladinkabkggdhapldcfegedoci',
     storeId: 'akghmpladinkabkggdhapldcfegedoci',
-    rating: 0,
+    rating: 5.0,
     users: '1+',
     version: '1.0.5',
     lastUpdated: 'February 8, 2026',
