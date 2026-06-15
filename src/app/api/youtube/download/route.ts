@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 
 export const maxDuration = 60
+export const dynamic = 'force-dynamic'
 
 // GET-based download proxy so the browser handles the download natively
 // URL params: url (base64 encoded download URL), filename, type

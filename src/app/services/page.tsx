@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import ProfileImage from '@/components/ui/ProfileImage'
 import { 
   Mail, 
   Smartphone, 
@@ -130,14 +130,10 @@ export default function ServicesPage() {
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary to-primary-400 rounded-[2rem] rotate-3 scale-105 opacity-20 dark:opacity-40 animate-pulse-slow"></div>
                 <div className="absolute inset-0 bg-white dark:bg-dark-800 rounded-[2rem] shadow-2xl overflow-hidden border-4 border-white dark:border-dark-800">
                   {/* Ensure you have an image at public/Assets/MDHuzaifa.jpg or change extension to .png */}
-                  <img 
-                    src="/Assets/MDHuzaifa.jpg" 
+                  <ProfileImage
+                    src="/Assets/MDHuzaifa.jpg"
                     alt="Md Huzaifa"
-                    className="w-full h-full object-cover object-top"
-                    onError={(e) => {
-                      // Fallback if image not found
-                      e.currentTarget.src = 'https://ui-avatars.com/api/?name=Md+Huzaifa&size=512&background=02B875&color=fff'
-                    }}
+                    fallbackName="Md Huzaifa"
                   />
                 </div>
                 
