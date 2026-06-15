@@ -31,11 +31,11 @@ export const products: Product[] = [
     tagline: 'Safe, Secure, Private Proxy Connector',
     description: 'ProxyConnector Pro is a powerful and secure proxy management extension designed to protect your online privacy. It allows you to easily connect, switch, and manage proxies while preventing IP leaks with built-in WebRTC protection. With automatic timezone matching and a smooth user experience, it ensures safe and reliable browsing every time.',
     category: 'chrome-extension',
-    icon: '/assets/proxyconnectorpro/icon.png',
+    icon: '/Assets/Proxy Connector Pro/ProxyConnector Pro - logo.png',
     screenshots: [
-      '/assets/proxyconnectorpro/banner.png',
-      '/assets/proxyconnectorpro/screenshot-1.png',
-      '/assets/proxyconnectorpro/screenshot-2.png'
+      '/Assets/Proxy Connector Pro/Graphic 1.png',
+      '/Assets/Proxy Connector Pro/Graphic 2.png',
+      '/Assets/Proxy Connector Pro/Graphic 3.png'
     ],
     features: [
       {
@@ -86,11 +86,11 @@ export const products: Product[] = [
     tagline: 'Earn Real UC by completing tasks, surveys and solving PUBG quizes.',
     description: 'UC Max is a mobile app that allows users to earn UC by completing various tasks, participating in surveys, and solving quizzes related to PUBG. It\'s a fun and engaging way to get in-game currency.',
     category: 'android-app',
-    icon: '/assets/uc-max/icon.png',
+    icon: '/Assets/UC MAX/UC MAX logo.png',
     screenshots: [
-      '/assets/uc-max/banner.png',
-      '/assets/uc-max/screenshot-1.png',
-      '/assets/uc-max/screenshot-2.png'
+      '/Assets/UC MAX/Graphic 1.png',
+      '/Assets/UC MAX/image 1.jpg',
+      '/Assets/UC MAX/image 2.jpg'
     ],
     features: [
       {
@@ -136,11 +136,11 @@ export const products: Product[] = [
     tagline: 'Instant Quiz Solver – Your Intelligent Study Companion',
     description: 'Transform the way you approach online quizzes and multiple-choice questions with QuizMaster AI. Our advanced artificial intelligence technology scans your screen, extracts questions, and provides accurate answers with comprehensive explanations in seconds.',
     category: 'chrome-extension',
-    icon: '/assets/quizmaster-ai/icon.png',
+    icon: '/Assets/QuizMaster AI - Extension/QuizMaster AI - Extension - logo.png',
     screenshots: [
-      '/assets/quizmaster-ai/banner.png',
-      '/assets/quizmaster-ai/screenshot-1.png',
-      '/assets/quizmaster-ai/screenshot-2.png'
+      '/Assets/QuizMaster AI - Extension/Graphic 1.png',
+      '/Assets/QuizMaster AI - Extension/Graphic 2.png',
+      '/Assets/QuizMaster AI - Extension/Graphic 3.png'
     ],
     features: [
       {
@@ -191,11 +191,10 @@ export const products: Product[] = [
     tagline: 'Sound Booster – Boost Volume Up to 600%',
     description: 'Pulser Pro is a powerful sound booster Chrome extension that amplifies audio up to 600% on any website. Whether you\'re watching YouTube, streaming on Netflix, or attending online meetings, Pulser Pro delivers crystal-clear, ultra-loud sound with a sleek and intuitive interface. Fine-tune volume, bass, and audio profiles per tab — all with zero lag.',
     category: 'chrome-extension',
-    icon: '/assets/pulser-pro/icon.png',
+    icon: '/Assets/Pulser Pro/Pulser Pro logo.png',
     screenshots: [
-      '/assets/pulser-pro/banner.png',
-      '/assets/pulser-pro/screenshot-1.png',
-      '/assets/pulser-pro/screenshot-2.png'
+      '/Assets/Pulser Pro/Graphic 1.png',
+      '/Assets/Pulser Pro/Graphic 2.png'
     ],
     features: [
       {
@@ -246,11 +245,11 @@ export const products: Product[] = [
     tagline: 'Block All Ads, Instantly',
     description: 'ZeroAds is a lightweight and powerful ad blocker designed to give you a cleaner, faster, and more private browsing experience. It blocks video ads on YouTube and streaming platforms, display and banner ads, pop-ups, overlay notifications, and tracking scripts that monitor your online activity — all with zero configuration needed.',
     category: 'chrome-extension',
-    icon: '/assets/zeroadsblocker/icon.png',
+    icon: '/Assets/ZeroAds/ZeroAds logo.png',
     screenshots: [
-      '/assets/zeroadsblocker/banner.png',
-      '/assets/zeroadsblocker/screenshot-1.png',
-      '/assets/zeroadsblocker/screenshot-2.png'
+      '/Assets/ZeroAds/Graphic 1.png',
+      '/Assets/ZeroAds/Graphic 2.png',
+      '/Assets/ZeroAds/Graphic 3.png'
     ],
     features: [
       {
@@ -301,11 +300,11 @@ export const products: Product[] = [
     tagline: 'Instant Quiz Solver – Android App',
     description: 'QuizMaster AI is a powerful mobile application designed to help you solve quizzes instantly. Simply scan any question on your screen or from your camera, and our advanced AI will provide detailed solutions with comprehensive explanations.',
     category: 'android-app',
-    icon: '/assets/quizmaster-ai-android/icon.png',
+    icon: '/Assets/QuizMaster App/QuizMaster AI - App - logo.png',
     screenshots: [
-      '/assets/quizmaster-ai-android/banner.png',
-      '/assets/quizmaster-ai-android/screenshot-1.png',
-      '/assets/quizmaster-ai-android/screenshot-2.png'
+      '/Assets/QuizMaster App/Graphic 1.png',
+      '/Assets/QuizMaster App/image 1.jpg',
+      '/Assets/QuizMaster App/image 2.jpg'
     ],
     features: [
       {
