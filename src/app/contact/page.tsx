@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import Breadcrumbs from '@/components/ui/Breadcrumbs'
-import { Mail, MapPin, MessageSquare, Clock, ExternalLink } from 'lucide-react'
+import { Mail, MapPin, Clock } from 'lucide-react'
 import ContactFormGeneral from '@/components/ui/ContactFormGeneral'
 
 export const metadata: Metadata = {
@@ -20,13 +20,6 @@ const contactMethods = [
     description: 'Send us an email anytime',
     value: 'huzaifa@exevolv.io',
     href: 'mailto:huzaifa@exevolv.io',
-  },
-  {
-    icon: <MessageSquare className="w-6 h-6" />,
-    title: 'Support',
-    description: 'Product-specific help',
-    value: 'support@exevolv.io',
-    href: 'mailto:support@exevolv.io',
   },
   {
     icon: <MapPin className="w-6 h-6" />,
@@ -107,38 +100,6 @@ export default function ContactPage() {
                 </div>
               ))}
 
-              {/* Social Links */}
-              <div className="card p-6">
-                <h3 className="font-semibold text-dark-900 dark:text-white mb-4">
-                  Follow Us
-                </h3>
-                <div className="flex gap-3">
-                  <a
-                    href="https://twitter.com/exevolv_io"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 bg-dark-100 dark:bg-dark-800 rounded-lg flex items-center justify-center text-dark-600 hover:text-primary hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-colors"
-                  >
-                    <ExternalLink className="w-5 h-5" />
-                  </a>
-                  <a
-                    href="https://github.com/exevolv-io"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 bg-dark-100 dark:bg-dark-800 rounded-lg flex items-center justify-center text-dark-600 hover:text-primary hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-colors"
-                  >
-                    <ExternalLink className="w-5 h-5" />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/mhuxaifa/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 bg-dark-100 dark:bg-dark-800 rounded-lg flex items-center justify-center text-dark-600 hover:text-primary hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-colors"
-                  >
-                    <ExternalLink className="w-5 h-5" />
-                  </a>
-                </div>
-              </div>
             </div>
 
             {/* Contact Form */}
