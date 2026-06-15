@@ -1,8 +1,9 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import Breadcrumbs from '@/components/ui/Breadcrumbs'
-import { Book, Search, ChevronRight, FileText, Download, HelpCircle, Wrench, Code } from 'lucide-react'
+import { Book, ChevronRight, FileText, Download, HelpCircle, Wrench, Code } from 'lucide-react'
 import { products } from '@/lib/products'
+import DocsSearch from '@/components/ui/DocsSearch'
 
 export const metadata: Metadata = {
   title: 'Documentation',
@@ -19,7 +20,7 @@ const quickLinks = [
     icon: <Download className="w-6 h-6" />,
     description: 'New to our products? Start here to learn how to install and set up our browser extensions and apps.',
     links: [
-      { name: 'ProxyConnector Pro Guide', href: '/products/proxyconnector-pro/documentation' },
+      { name: 'ProxyConnector Pro Guide', href: '/products/proxyconnectorpro/documentation' },
       { name: 'QuizMaster AI Guide', href: '/products/quizmaster-ai/documentation' },
     ]
   },
@@ -77,14 +78,7 @@ export default function DocsPage() {
             </p>
             
             {/* Search */}
-            <div className="relative max-w-xl">
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-dark-400" />
-              <input
-                type="text"
-                placeholder="Search documentation..."
-                className="w-full pl-12 pr-4 py-4 bg-white/80 dark:bg-dark-900/80 backdrop-blur-sm border border-dark-200 dark:border-dark-700 rounded-xl text-dark-900 dark:text-white placeholder:text-dark-400 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary shadow-lg"
-              />
-            </div>
+            <DocsSearch products={products} />
           </div>
         </div>
       </section>

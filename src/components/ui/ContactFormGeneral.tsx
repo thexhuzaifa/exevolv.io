@@ -156,10 +156,12 @@ export default function ContactFormGeneral() {
             className="input-field"
           >
             <option value="">Select a product (optional)</option>
-            <option value="proxyconnector-pro">ProxyConnector Pro</option>
+            <option value="proxyconnectorpro">ProxyConnector Pro</option>
+            <option value="uc-max">UC Max</option>
             <option value="quizmaster-ai">QuizMaster AI</option>
             <option value="pulser-pro">Pulser Pro</option>
             <option value="zeroadsblocker">ZeroAds</option>
+            <option value="quizmaster-ai-android">QuizMaster AI App</option>
           </select>
         </div>
 
