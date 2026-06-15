@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 interface ImageSliderProps {
@@ -23,10 +24,14 @@ export default function ImageSlider({ images, altText }: ImageSliderProps) {
 
   return (
     <div className="relative w-full aspect-[4/3] sm:aspect-video md:aspect-[16/10] bg-gray-50 dark:bg-dark-900 rounded-3xl overflow-hidden shadow-2xl shadow-primary/20 group">
-      <img 
+      <Image
+        key={currentIndex}
         src={images[currentIndex]} 
         alt={`${altText} - Screenshot ${currentIndex + 1}`}
-        className="w-full h-full object-contain p-2 sm:p-4 transition-transform duration-500"
+        fill
+        sizes="(max-width: 1024px) 100vw, 70vw"
+        priority={currentIndex === 0}
+        className="object-contain p-2 sm:p-4 transition-opacity duration-300 ease-in-out"
       />
       
       {/* Slider Controls */}
