@@ -12,6 +12,7 @@ import {
   useMotionValue,
   useSpring,
   AnimatePresence,
+  type Variants,
 } from 'framer-motion'
 import { useRef, useState, useEffect } from 'react'
 
@@ -20,7 +21,7 @@ const developerName = 'Gulraiz Hamza'
 const developerProfile = 'https://github.com/gulraiz12ab'
 
 // ========== ANIMATION VARIANTS ==========
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -31,7 +32,7 @@ const containerVariants = {
   },
 }
 
-const cardVariants = {
+const cardVariants: Variants = {
   hidden: { opacity: 0, y: 60, scale: 0.92, rotateX: 8 },
   visible: {
     opacity: 1,
@@ -39,29 +40,29 @@ const cardVariants = {
     scale: 1,
     rotateX: 0,
     transition: {
-      type: 'spring',
+      type: 'spring' as const,
       stiffness: 90,
       damping: 18,
     },
   },
 }
 
-const heroTextVariant = {
+const heroTextVariant: Variants = {
   hidden: { opacity: 0, y: 30, filter: 'blur(8px)' },
   visible: {
     opacity: 1,
     y: 0,
     filter: 'blur(0px)',
-    transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.7, ease: 'easeOut' as const },
   },
 }
 
-const letterVariants = {
+const letterVariants: Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.04, type: 'spring', stiffness: 120, damping: 14 },
+    transition: { delay: i * 0.04, type: 'spring' as const, stiffness: 120, damping: 14 },
   }),
 }
 
