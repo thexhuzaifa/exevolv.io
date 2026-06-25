@@ -24,7 +24,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `Privacy Policy - ${product.name}`,
-    description: `Privacy policy for ${product.name}. Learn how we handle your data and protect your privacy.`,
+    description:
+      product.slug === 'vu-scholars'
+        ? 'Privacy Policy for VU Scholars, the offline study app for Virtual University handouts and textbooks.'
+        : `Privacy policy for ${product.name}. Learn how we handle your data and protect your privacy.`,
   }
 }
 
@@ -37,6 +40,7 @@ export default function PrivacyPolicyPage({ params }: Props) {
 
   const isExvPlayer = product.slug === 'exv-player'
   const isPolicyScanAI = product.slug === 'policy-scan-ai'
+  const isVUScholars = product.slug === 'vu-scholars'
 
   return (
     <>
@@ -172,6 +176,56 @@ export default function PrivacyPolicyPage({ params }: Props) {
                 <h2>Contact Us</h2>
                 <p>
                   If you have questions about this policy, contact us at <a href="mailto:privacy@exevolv.io">privacy@exevolv.io</a>.
+                </p>
+              </>
+            ) : isVUScholars ? (
+              <>
+                <p>
+                  VU Scholars (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is designed to give students offline access to educational handouts and textbooks.
+                  This Privacy Policy explains how the App works and how it handles information. The short version is simple: we do not collect your personal data.
+                </p>
+
+                <h2>1. Information We Do Not Collect</h2>
+                <p>
+                  VU Scholars is built to work without tracking you. We do not collect, store, sell, or share personal information such as your name, email address, phone number, student ID, location, or device contacts.
+                </p>
+                <ul>
+                  <li>No account is required to use the App.</li>
+                  <li>No analytics, ad networks, or hidden trackers are included.</li>
+                  <li>No usage logs are created for personal profiling.</li>
+                </ul>
+
+                <h2>2. Local Device Storage</h2>
+                <p>
+                  When you download a handout or textbook, that file is saved locally on your own device so you can read it offline.
+                  We do not have access to your device storage and we do not monitor which files you open, download, or delete.
+                </p>
+                <p>
+                  You may remove downloaded files at any time through the App or through your device file manager.
+                </p>
+
+                <h2>3. Third-Party Content and Disclaimer</h2>
+                <p>
+                  VU Scholars is an independent, unofficial student application and is not affiliated with, endorsed by, or connected to the Virtual University of Pakistan.
+                </p>
+                <p>
+                  Educational content shown in the App is sourced from publicly available official Virtual University platforms, including vu.edu.pk and ocw.vu.edu.pk.
+                  Because the App only provides a convenient offline reading experience for public study material, we do not share any user data with the Virtual University or any other third party institution.
+                </p>
+
+                <h2>4. Children's Privacy</h2>
+                <p>
+                  The App is intended for university and college students. Since we do not collect personal data, the App does not create a profile of any user, including minors.
+                </p>
+
+                <h2>5. Changes to This Privacy Policy</h2>
+                <p>
+                  We may update this Policy from time to time if the App changes or if legal requirements change. The updated version will be posted on this page with a new effective date.
+                </p>
+
+                <h2>6. Contact Us</h2>
+                <p>
+                  If you have any questions about this Privacy Policy or the VU Scholars app, please contact us at <a href="mailto:privacy@exevolv.io">privacy@exevolv.io</a>.
                 </p>
               </>
             ) : (

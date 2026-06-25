@@ -494,6 +494,49 @@ export const products: Product[] = [
     developer: 'exevolv.io',
     privacyPolicyUrl: '/products/policy-scan-ai/privacy-policy',
     supportUrl: '/products/policy-scan-ai/documentation'
+  },
+  {
+    id: 'vu-scholars',
+    name: 'VU Scholars',
+    slug: 'vu-scholars',
+    tagline: 'Offline VU handouts and textbooks in one place.',
+    description: 'VU Scholars is an offline Android app designed to give students simple access to Virtual University handouts and textbooks. It is built for fast reading, easy downloads, and a private study experience without accounts or tracking.',
+    category: 'android-app',
+    icon: '/images/products/vu-scholars.webp',
+    screenshots: [
+      '/images/products/vu-scholars.webp'
+    ],
+    features: [
+      {
+        title: 'Offline Reading',
+        description: 'Download handouts and textbooks so you can study without an internet connection.',
+        icon: 'BookOpen'
+      },
+      {
+        title: 'Private by Design',
+        description: 'No account creation, no sign-in, and no personal data collection.',
+        icon: 'Shield'
+      },
+      {
+        title: 'Easy File Access',
+        description: 'Open and manage study materials directly from your device storage.',
+        icon: 'FolderOpen'
+      },
+      {
+        title: 'Fast Navigation',
+        description: 'Move through courses and documents quickly with a simple student-friendly layout.',
+        icon: 'Zap'
+      }
+    ],
+    storeUrl: 'https://play.google.com/store/apps/details?id=app.creativetaleem.vuscholars',
+    storeId: 'app.creativetaleem.vuscholars',
+    rating: 5.0,
+    users: '1+',
+    version: '1.0.0',
+    lastUpdated: 'March 20, 2026',
+    developer: 'exevolv.io',
+    privacyPolicyUrl: '/products/vu-scholars/privacy-policy',
+    supportUrl: '/products/vu-scholars/documentation'
   }
 ]
 
