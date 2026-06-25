@@ -6,7 +6,7 @@ import ImageSlider from '@/components/ui/ImageSlider'
 import { ChromeInstallButton, PlayStoreButton, EdgeInstallButton, FirefoxInstallButton } from '@/components/ui/StoreButtons'
 import { products, getProductBySlug } from '@/lib/products'
 import * as Icons from 'lucide-react'
-import { Star, Users, Calendar, ArrowRight, Check, ChevronRight, Shield, Zap, BookOpen } from 'lucide-react'
+import { Star, Users, Calendar, ArrowRight, Check, ChevronRight, Shield, Zap, BookOpen, Github } from 'lucide-react'
 
 interface Props {
   params: { slug: string }
@@ -174,6 +174,23 @@ export default function ProductPage({ params }: Props) {
                   <span className="badge badge-primary">AI Document Scanner</span>
                   <span className="badge badge-primary">Risk Categorization</span>
                   <span className="badge badge-primary">Offline Rights Library</span>
+                </div>
+              )}
+
+              {product.githubUrl && (
+                <div className="flex flex-wrap gap-3 mb-8">
+                  <a
+                    href={product.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-3 px-6 py-3 bg-dark-900 text-white rounded-xl hover:bg-dark-800 transition-all duration-200"
+                  >
+                    <Github className="w-5 h-5" />
+                    <div className="text-left">
+                      <div className="text-xs text-dark-300 uppercase tracking-wide">Source Code</div>
+                      <div className="font-semibold text-white">GitHub</div>
+                    </div>
+                  </a>
                 </div>
               )}
 

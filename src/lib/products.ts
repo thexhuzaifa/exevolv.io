@@ -21,6 +21,7 @@ export interface Product {
   developer: string
   privacyPolicyUrl: string
   supportUrl: string
+  githubUrl?: string
 }
 
 export const products: Product[] = [
@@ -440,7 +441,8 @@ export const products: Product[] = [
     lastUpdated: 'June 25, 2026',
     developer: 'exevolv.io',
     privacyPolicyUrl: '/products/exv-player/privacy-policy',
-    supportUrl: '/products/exv-player/documentation'
+    supportUrl: '/products/exv-player/documentation',
+    githubUrl: 'https://github.com/gulraiz12ab/exv-player'
   },
   {
     id: 'policy-scan-ai',
