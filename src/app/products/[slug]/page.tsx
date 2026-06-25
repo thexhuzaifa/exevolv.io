@@ -177,10 +177,10 @@ export default function ProductPage({ params }: Props) {
                 </div>
               )}
 
-              {product.githubUrl && (
+              {product.sourceCodeUrl && (
                 <div className="flex flex-wrap gap-3 mb-8">
                   <a
-                    href={product.githubUrl}
+                    href={product.sourceCodeUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-3 px-6 py-3 bg-dark-900 text-white rounded-xl hover:bg-dark-800 transition-all duration-200"
