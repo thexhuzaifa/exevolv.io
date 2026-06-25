@@ -25,7 +25,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `Privacy Policy - ${product.name}`,
     description:
-      product.slug === 'vu-scholars'
+      product.slug === 'studybuddy-ai'
+        ? 'Privacy Policy for StudyBuddy AI, the homework helper app with offline-capable AI explanations.'
+        : product.slug === 'vu-scholars'
         ? 'Privacy Policy for VU Scholars, the offline study app for Virtual University handouts and textbooks.'
         : `Privacy policy for ${product.name}. Learn how we handle your data and protect your privacy.`,
   }
@@ -41,6 +43,7 @@ export default function PrivacyPolicyPage({ params }: Props) {
   const isExvPlayer = product.slug === 'exv-player'
   const isPolicyScanAI = product.slug === 'policy-scan-ai'
   const isVUScholars = product.slug === 'vu-scholars'
+  const isStudyBuddyAI = product.slug === 'studybuddy-ai'
 
   return (
     <>
@@ -67,7 +70,7 @@ export default function PrivacyPolicyPage({ params }: Props) {
               </div>
             </div>
             <p className="text-dark-600 dark:text-dark-400">
-              Last updated: {product.slug === 'quizmaster-ai' ? 'May 09, 2026' : 'February 1, 2026'}
+              Last updated: {product.slug === 'quizmaster-ai' ? 'May 09, 2026' : product.slug === 'studybuddy-ai' ? 'March 20, 2026' : 'February 1, 2026'}
             </p>
           </div>
         </div>
@@ -226,6 +229,64 @@ export default function PrivacyPolicyPage({ params }: Props) {
                 <h2>6. Contact Us</h2>
                 <p>
                   If you have any questions about this Privacy Policy or the VU Scholars app, please contact us at <a href="mailto:privacy@exevolv.io">privacy@exevolv.io</a>.
+                </p>
+              </>
+            ) : isStudyBuddyAI ? (
+              <>
+                <p>
+                  Welcome to <strong>StudyBuddy AI</strong> (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;), developed and offered by <strong>Exevolv</strong>.
+                  We are committed to protecting your privacy and creating a safe, distraction-free learning experience.
+                  This Privacy Policy explains how we handle information when you use the StudyBuddy AI mobile application (the &quot;App&quot;).
+                </p>
+
+                <h2>1. Information We Do Not Collect</h2>
+                <p>
+                  StudyBuddy AI is designed to work without collecting personal identifiers or requiring an account.
+                </p>
+                <ul>
+                  <li>No account is required to use the App.</li>
+                  <li>We do not ask for your name, email address, or phone number.</li>
+                  <li>The App contains no advertisements and no tracking cookies.</li>
+                  <li>We do not share your data with advertisers or data brokers.</li>
+                </ul>
+
+                <h2>2. How We Process Your Homework Questions</h2>
+                <p>
+                  To provide instant, step-by-step explanations, the App may securely transmit the text of your homework question to our AI processing providers.
+                  This processing is ephemeral, meaning it is used only to generate your answer and is not permanently stored on our servers.
+                </p>
+                <p>
+                  If you save a question or answer for later review, that content is stored locally on your own device for offline access.
+                  We do not have access to that local data.
+                </p>
+
+                <h2>3. Children's Privacy</h2>
+                <p>
+                  StudyBuddy AI is intended for students of all ages, including children in middle and high school.
+                  Because we do not collect personal information and do not require account creation, our data practices are designed to be compatible with standard children's privacy expectations.
+                </p>
+
+                <h2>4. Data Security</h2>
+                <p>
+                  We use industry-standard encryption to protect your homework questions while they are being processed.
+                  However, no electronic transmission over the internet is 100% secure.
+                </p>
+
+                <h2>5. AI Accuracy Disclaimer</h2>
+                <p>
+                  StudyBuddy AI uses artificial intelligence to generate responses. While we strive for accuracy, AI-generated content may not always be correct.
+                  Users should independently verify important information before relying on it for exams or assignments.
+                </p>
+
+                <h2>6. Changes to This Privacy Policy</h2>
+                <p>
+                  We may update this Privacy Policy from time to time to reflect changes in our App or legal requirements.
+                  Any updates will be posted on this page with a revised effective date.
+                </p>
+
+                <h2>7. Contact Us</h2>
+                <p>
+                  If you have questions or requests regarding this Privacy Policy or how your data is handled, please contact Exevolv at <a href="mailto:privacy@exevolv.io">privacy@exevolv.io</a>.
                 </p>
               </>
             ) : (

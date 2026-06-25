@@ -537,6 +537,49 @@ export const products: Product[] = [
     developer: 'exevolv.io',
     privacyPolicyUrl: '/products/vu-scholars/privacy-policy',
     supportUrl: '/products/vu-scholars/documentation'
+  },
+  {
+    id: 'studybuddy-ai',
+    name: 'StudyBuddy AI',
+    slug: 'studybuddy-ai',
+    tagline: 'Homework helper with step-by-step AI explanations.',
+    description: 'StudyBuddy AI is a privacy-focused homework helper designed to answer questions, explain concepts step by step, and save useful answers locally for offline use. It is built for a distraction-free learning experience with no account required and no ads.',
+    category: 'android-app',
+    icon: '/images/products/ai-app.webp',
+    screenshots: [
+      '/images/products/ai-app.webp'
+    ],
+    features: [
+      {
+        title: 'Step-by-Step Help',
+        description: 'Get clear explanations that break homework questions into easy-to-follow steps.',
+        icon: 'BookOpen'
+      },
+      {
+        title: 'No Account Required',
+        description: 'Use the app instantly without sign-up, login, or personal profile creation.',
+        icon: 'UserX'
+      },
+      {
+        title: 'Offline Capable',
+        description: 'Save questions and answers locally so you can revisit them without the internet.',
+        icon: 'WifiOff'
+      },
+      {
+        title: 'Privacy First',
+        description: 'No ads, no tracking cookies, and no data sharing with third-party advertisers.',
+        icon: 'Shield'
+      }
+    ],
+    storeUrl: 'https://play.google.com/store/apps/details?id=app.creativetaleem.aitutor',
+    storeId: 'app.creativetaleem.aitutor',
+    rating: 5.0,
+    users: '1+',
+    version: '1.0.0',
+    lastUpdated: 'March 20, 2026',
+    developer: 'Exevolv',
+    privacyPolicyUrl: '/products/studybuddy-ai/privacy-policy',
+    supportUrl: '/products/studybuddy-ai/documentation'
   }
 ]
 
