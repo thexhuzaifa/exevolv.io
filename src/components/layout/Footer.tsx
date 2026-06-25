@@ -20,6 +20,7 @@ const footerLinks = {
   resources: [
     { name: 'Documentation', href: '/docs' },
     { name: 'FAQs', href: '/faqs' },
+    { name: 'GitHub Source Code', href: '/github-source-code' },
     { name: 'Support', href: '/contact' },
     { name: 'Blog', href: '/blog' },
   ],

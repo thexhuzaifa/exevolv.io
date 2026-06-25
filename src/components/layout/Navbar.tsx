@@ -24,6 +24,7 @@ const navigation = [
   { name: 'Blog', href: '/blog' },
   { name: 'Docs', href: '/docs' },
   { name: 'FAQs', href: '/faqs' },
+  { name: 'GitHub Source Code', href: '/github-source-code' },
   { name: 'Contact', href: '/contact' },
 ]
 
