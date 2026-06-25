@@ -29,19 +29,19 @@ export default function GitHubSourceCodePage() {
       {/* ===== ULTRA-SMOOTH HERO ===== */}
       <section className="relative bg-white dark:bg-dark-950 py-32 md:py-48 overflow-hidden">
         
-        {/* GPU-Accelerated Mesh Gradients (No JS Particles) */}
+        {/* GPU-Accelerated Mesh Gradients */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none flex items-center justify-center">
           <div className="absolute top-[-20%] right-[-10%] w-[50rem] h-[50rem] bg-primary/20 rounded-full blur-[120px] mix-blend-multiply dark:mix-blend-screen animate-pulse duration-10000 will-change-transform" />
           <div className="absolute bottom-[-20%] left-[-10%] w-[40rem] h-[40rem] bg-cyan-400/15 rounded-full blur-[100px] mix-blend-multiply dark:mix-blend-screen animate-pulse duration-7000 delay-1000 will-change-transform" />
         </div>
 
-        {/* CSS-Only Grid Background */}
+        {/* Grid Background */}
         <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center opacity-[0.03] dark:opacity-[0.05]" />
 
         <div className="container-custom relative z-10">
           <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
             
-            {/* Smooth Badge Reveal */}
+            {/* Badge Reveal */}
             <motion.div
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -54,7 +54,7 @@ export default function GitHubSourceCodePage() {
               </span>
             </motion.div>
 
-            {/* High-Performance Staggered Heading */}
+            {/* Staggered Heading */}
             <h1 className="text-5xl md:text-7xl font-black text-dark-900 dark:text-white tracking-tight mb-6 leading-tight">
               <motion.span
                 initial={{ opacity: 0, y: 20 }}
@@ -80,7 +80,7 @@ export default function GitHubSourceCodePage() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-dark-600 dark:text-dark-400 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto font-medium mt-6 mb-12"
             >
-              Step inside our architecture. Browse optimized repositories, learn from the source, and contribute to the modern stack.
+              Step inside our architecture. Browse our public repositories, learn from the source code, and contribute to the modern stack.
             </motion.p>
 
             {/* Stats Row */}
@@ -105,7 +105,7 @@ export default function GitHubSourceCodePage() {
               ))}
             </motion.div>
 
-            {/* Static Pills (Fast Rendering) */}
+            {/* Tech Stack Pills */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -146,10 +146,15 @@ export default function GitHubSourceCodePage() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="group relative overflow-hidden rounded-[2.5rem] border border-dark-100 dark:border-dark-800/80 bg-white dark:bg-dark-900 p-8 flex flex-col h-full shadow-sm hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] hover:-translate-y-2 transition-all duration-500 ease-out will-change-transform"
               >
-                {/* CSS Shimmer Line (GPU Accelerated) */}
+                {/* Clean Numeric Watermark */}
+                <div className="absolute right-8 bottom-24 text-7xl font-black text-dark-100/40 dark:text-dark-800/40 font-mono select-none pointer-events-none group-hover:text-primary/10 group-hover:scale-110 transition-all duration-500 ease-out">
+                  {String(index + 1).padStart(2, '0')}
+                </div>
+
+                {/* CSS Shimmer Line */}
                 <div className="absolute top-0 left-[-100%] w-[200%] h-1 bg-gradient-to-r from-transparent via-primary to-transparent group-hover:translate-x-[50%] transition-transform duration-1000 ease-in-out" />
 
-                <div className="flex items-center justify-between gap-4 mb-8">
+                <div className="flex items-center justify-between gap-4 mb-8 relative z-10">
                   <div className="flex items-center gap-3 text-primary">
                     <div className="p-3 rounded-2xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                       <Code2 className="w-5 h-5" />
@@ -164,15 +169,15 @@ export default function GitHubSourceCodePage() {
                   </span>
                 </div>
 
-                <h2 className="text-3xl font-bold text-dark-900 dark:text-white mb-4 group-hover:text-primary transition-colors duration-300">
+                <h2 className="text-3xl font-bold text-dark-900 dark:text-white mb-4 relative z-10 group-hover:text-primary transition-colors duration-300">
                   {product.name}
                 </h2>
 
-                <p className="text-base text-dark-600 dark:text-dark-400 mb-10 leading-relaxed flex-grow">
+                <p className="text-base text-dark-600 dark:text-dark-400 mb-10 leading-relaxed flex-grow relative z-10">
                   {product.description}
                 </p>
 
-                <div className="mt-auto flex flex-col gap-5">
+                <div className="mt-auto flex flex-col gap-5 relative z-10">
                   <div className="flex items-center justify-between p-4 rounded-3xl bg-dark-50/70 dark:bg-dark-950/70 border border-dark-100/50 dark:border-dark-800/50">
                     <div className="flex items-center gap-4">
                       <div className="w-12 h-12 rounded-full bg-white dark:bg-dark-900 flex items-center justify-center text-dark-500 shadow-sm border border-dark-100 dark:border-dark-800">
