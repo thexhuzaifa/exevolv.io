@@ -5,6 +5,7 @@ const footerLinks = {
   products: [
     { name: 'ProxyConnector Pro', href: '/products/proxyconnectorpro' },
     { name: 'QuizMaster AI', href: '/products/quizmaster-ai' },
+    { name: 'General Knowledge Quiz', href: '/products/general-knowledge-quiz' },
     { name: 'Go Play Test', href: '/products/go-play-test' },
     { name: 'Policy Scan AI', href: '/products/policy-scan-ai' },
     { name: 'Pulser Pro', href: '/products/pulser-pro' },

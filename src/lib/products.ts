@@ -587,6 +587,56 @@ export const products: Product[] = [
   }
   ,
   {
+    id: 'general-knowledge-quiz',
+    name: 'General Knowledge Quiz',
+    slug: 'general-knowledge-quiz',
+    tagline: 'Test your general knowledge across many categories.',
+    description: `Challenge yourself with comprehensive general knowledge quizzes across history, geography, science, sports, current affairs, arts & literature, and technology. No registration required and works offline once questions are downloaded.`,
+    category: 'android-app',
+    icon: '/images/products/quiz-app.webp',
+    screenshots: [
+      '/images/products/quiz-app.webp'
+    ],
+    features: [
+      {
+        title: 'Wide Question Coverage',
+        description: 'Questions across many categories including history, science, and current affairs.',
+        icon: 'BookOpen'
+      },
+      {
+        title: 'Instant Feedback',
+        description: 'Get immediate results and explanations for answers.',
+        icon: 'Zap'
+      },
+      {
+        title: 'Track Progress',
+        description: 'Track your scores locally to monitor improvement over time.',
+        icon: 'ChartBar'
+      },
+      {
+        title: 'Offline Mode',
+        description: 'Download questions to play offline without internet.',
+        icon: 'WifiOff'
+      },
+      {
+        title: 'Privacy Focused',
+        description: 'No ads and no personal data collection.',
+        icon: 'Shield'
+      }
+    ],
+    storeUrl: 'https://play.google.com/store/apps/details?id=app.dev.gkq',
+    storeId: 'app.dev.gkq',
+    rating: 5.0,
+    users: '1+',
+    version: '1.0.0',
+    lastUpdated: 'June 26, 2026',
+    developer: 'Exevolv',
+    privacyPolicyUrl: '/products/general-knowledge-quiz/privacy-policy',
+    supportUrl: '/products/general-knowledge-quiz/documentation',
+    sourceCodeUrl: 'https://github.com/gulraiz12ab/General-Knowledge-Quiz'
+  }
+  ,
+  {
     id: 'go-play-test',
     name: 'Go Play Test',
     slug: 'go-play-test',
