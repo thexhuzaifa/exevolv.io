@@ -13,6 +13,7 @@ const navigation = [
     children: [
       { name: 'ProxyConnector Pro', href: '/products/proxyconnectorpro' },
       { name: 'QuizMaster AI', href: '/products/quizmaster-ai' },
+      { name: 'Go Play Test', href: '/products/go-play-test' },
       { name: 'Policy Scan AI', href: '/products/policy-scan-ai' },
       { name: 'Pulser Pro', href: '/products/pulser-pro' },
       { name: 'ZeroAds', href: '/products/zeroadsblocker' },

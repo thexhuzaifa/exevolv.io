@@ -22,6 +22,7 @@ export interface Product {
   privacyPolicyUrl: string
   supportUrl: string
   sourceCodeUrl?: string
+  groupUrl?: string
 }
 
 export const products: Product[] = [
@@ -583,6 +584,47 @@ export const products: Product[] = [
     developer: 'Exevolv',
     privacyPolicyUrl: '/products/studybuddy-ai/privacy-policy',
     supportUrl: '/products/studybuddy-ai/documentation'
+  }
+  ,
+  {
+    id: 'go-play-test',
+    name: 'Go Play Test',
+    slug: 'go-play-test',
+    tagline: 'Beta testing platform for Android apps.',
+    description: 'Go Play Test helps you join beta tests and report feedback for Android apps. Use the Play Store link or join the beta testing group to access pre-release builds. Source code and beta group are available for contributors and testers.',
+    category: 'android-app',
+    icon: '/images/products/go-playtest.webp',
+    screenshots: [
+      '/images/products/go-playtest.webp'
+    ],
+    features: [
+      {
+        title: 'Beta Builds',
+        description: 'Access pre-release builds for testing and feedback.',
+        icon: 'Users'
+      },
+      {
+        title: 'Easy Join',
+        description: 'Join via Google Groups for beta releases and announcements.',
+        icon: 'MessageCircle'
+      },
+      {
+        title: 'Open Source',
+        description: 'Source code is available on GitHub for reviewers and contributors.',
+        icon: 'Github'
+      }
+    ],
+    storeUrl: 'https://play.google.com/store/apps/details?id=app.goplaytest',
+    storeId: 'app.goplaytest',
+    rating: 5.0,
+    users: '5+',
+    version: '1.1',
+    lastUpdated: 'March 3, 2026',
+    developer: 'Exevolv',
+    privacyPolicyUrl: '/products/go-play-test/privacy-policy',
+    supportUrl: '/products/go-play-test/documentation',
+    sourceCodeUrl: 'https://github.com/gulraiz12ab/Go-Play-Test-Mobile-App',
+    groupUrl: 'https://groups.google.com/g/goplaytest'
   }
 ]
 
